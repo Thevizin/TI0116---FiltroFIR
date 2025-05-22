@@ -24,12 +24,12 @@ O filtro FIR passa-baixa é implementado utilizando a técnica de janelamento co
 
 A resposta ao impulso do filtro é definida como:
 
-$ h[n] = \frac{sin(\omega_c(n - \alpha))}{\pi(n - \alpha)} \cdot w[n] $
+$h[n] = \frac{sin(\omega_c(n - \alpha))}{\pi(n - \alpha)} \cdot w[n]$
 
 Onde:
 - $\omega_c = 2\pi f_c / f_s$ é a frequência de corte normalizada.
 - $\alpha = (L-1)/2$ é o deslocamento para tornar o filtro causal.
-- $w[n]$ é a **Janela de Hamming**: $ w[n] = 0.54 - 0.46 \cos(2\pi n / (L - 1)) $.
+- $w[n]$ é a **Janela de Hamming**: $w[n] = 0.54 - 0.46 \cos(2\pi n / (L - 1))$.
 
 ## 🔧 Implementação
 ### 🔹 Processamento do Áudio
